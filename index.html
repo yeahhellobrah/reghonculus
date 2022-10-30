@@ -76,6 +76,8 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 
+
+
 <script>
 var color = '#01a2df';
 function flip() {
@@ -132,6 +134,7 @@ function CongFlip() {
 
 
 <script>
+    const interval = setInterval(() => {
     var currentDate = new Date();
     var month = currentDate.getMonth() + 1;
     var day = currentDate.getDate();
@@ -142,9 +145,8 @@ function CongFlip() {
     hours = hours % 12;
     hours = hours ? hours : 12; // the hour '0' should be '12'
     minutes = minutes < 10 ? '0'+minutes : minutes;
-    var currentDateString = month + "/" + day + "/" + year + " " + hours + ":" + minutes + AMPM;
-    console.log(currentDateString)
-    document.getElementById("homologous").innerHTML=currentDateString
+    document.getElementById("homologous").innerHTML = month + "/" + day + "/" + year + " " + hours + ":" + minutes + AMPM;
+    }, 60000);
 </script>
 
 
