@@ -48,11 +48,11 @@ body {
 }
 </style>
 
-<img src="webp.webp" style="width:100%;height:100%">
+<img src="Truevid.gif" style="width:100%;height:100%">
 
 <script>
 var date = new Date().getTime()
-var newDate = new Date(date + 3200000)
+var newDate = new Date(date + 5200000)
 
 var x = setInterval(function() {
   var now = new Date().getTime();
@@ -78,13 +78,13 @@ function flip() {
     elem.style.backgroundColor = '#006ec6'; // darker
     color = '#006ec6';
     document.getElementById("demo").style.opacity=0
-    document.getElementById("demo2").style.opacity=0
+    document.getElementById("demo2").innerHTML="Current Time"
     document.getElementById("homologous").style.opacity=1
   } else {
     elem.style.backgroundColor = '#01a2df'; // privilege
     color = '#01a2df';
     document.getElementById("demo").style.opacity=1
-    document.getElementById("demo2").style.opacity=1
+    document.getElementById("demo2").innerHTML="Time Remaining"
     document.getElementById("homologous").style.opacity=0
   }
 }
@@ -94,7 +94,7 @@ function flip() {
 
 
 
-<div onclick="flip()" style="text-align: center; margin-top: 25px; color: #fff; font-family:'Helvetica Neue', Helvetica, sans-serif; font-size: 170%; font-weight:bold;display:block;user-select:none">
+<div onclick="flip()" style="text-align: center; margin-top: 25px; color: #fff; font-family:'Helvetica Neue', Helvetica, sans-serif; font-size: 185%; font-weight:bold;display:block;user-select:none">
     <div id="demo" style="position:absolute;width: 100%"></div>
     <div id="homologous" style="position:absolute;width: 100%;opacity:0;"></div>
     <div id="demo2" style="position:absolute;width: 100%;margin-top:75px;font-size:77%">Time Remaining</div>
@@ -129,7 +129,7 @@ function CongFlip() {
     var currentDate = new Date();
     var month = currentDate.getMonth() + 1;
     var day = currentDate.getDate();
-    var year = currentDate.getFullYear();
+    var year = 22
     var hours = currentDate.getHours();
     var minutes = currentDate.getMinutes();
     var AMPM = hours >= 12 ? ' PM' : ' AM';
