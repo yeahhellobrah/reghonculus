@@ -17,8 +17,8 @@ body {
   /*position:fixed;*/
   right: 0;
   bottom: 0;
-  width:100%;
-  height:auto;
+  width:125%;
+  height:125%;
  /* min-width: 100%; 
   min-height: 100%; */
 }
@@ -48,7 +48,10 @@ body {
 }
 </style>
 
-<img src="VIDEO.gif">
+<video autoplay muted loop playsinline id="myVideo">
+  <source src="VIDEO.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
 <script>
 var date = new Date().getTime()
@@ -120,7 +123,7 @@ function CongFlip() {
 
 
 
-<img id="cong" src="QR.PNG" style="max-width:100%;margin-top: -424px;opacity:0;display:block">
+<img id="cong" src="QR.PNG" style="max-width:100%;max-height:105%;margin-top: -424px;opacity:0;display:block">
 <div id ="cong2" onclick="CongFlip()" style="font-size: 235%;margin-left:87.5%;margin-top: -49px;opacity:0;user-select:none;">💀</div>
 
 
